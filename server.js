@@ -27,7 +27,7 @@ var server = http.createServer(function(request, response){
     response.write(`<!DOCTYPE html>
     <html><head></head><body><h1>我是一个标题标签</h1></body></html>`)
     response.end()
-  } else if(path === '/'){
+  } else if(path === '/x'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
     response.write(`h1{color: red;}`)
